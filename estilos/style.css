@@ -32,16 +32,15 @@ main {
 }
 
 #login {
-    background-color: white;
     width: 250px;
     height: 515px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.623);
-    transition: width .5s, height .5s;
-    transition-timing-function: ease;
     background-color: var(--cinza3);
     color: var(--azul3);
+    transition: width .5s, height .5s;
+    transition-timing-function: ease;
 }
 
 #imagem {
@@ -70,8 +69,32 @@ main {
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
+    border: 2px solid var(--azul3);
+}
+
+.campo span {
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+.campo > input {
+    background-color: #63666b;
+    border: none;
+    color: var(--azul3);
+    font-size: 0.9em;
+    height: 100%;
+    width: calc(100% - 45px);
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-13px);
+    /* Deixar a animação/tranformação, sempre como último elemento */
+}
+
+.campo > input:focus-within {
+    background-color: #8e8f92;
 }
 
 .campo label {
@@ -96,12 +119,13 @@ form > input[type=submit]:hover {
 }
 
 .botao {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     font-size: 1em;
     width: 100%;
     height: 40px;
-    padding-top: 5px;
     margin-top: 5px;
     background-color: var(--cinza2);
     color: var(--azul3);
@@ -116,4 +140,5 @@ form > input[type=submit]:hover {
 
 .botao > span {
     font-size: 1.3em;
+    padding-left: 5px;
 }

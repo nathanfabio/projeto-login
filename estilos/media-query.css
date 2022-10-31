@@ -8,6 +8,7 @@
 
     #login {
         width: 70vw;
+        height: 290px;
     }
 
     #imagem {
@@ -30,6 +31,7 @@
 
     #login {
         width: 950px;
+        height: 360px;
     }
 
     #imagem {
@@ -49,5 +51,6 @@
 
     #form p {
         font-size: 1.2em;
+        margin: 10px 0px;
     }
 }
